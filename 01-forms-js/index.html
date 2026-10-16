@@ -5,12 +5,13 @@
   <title>Forms in JS</title>
 </head>
 <body>
-  <form id="signup" action="/signup" method="post">
-  <input type="text" name="username" id="username" />
-  <input type="email" name="email" id="email" />
-
-  <label><input type="radio" name="plan" value="free" /> Free</label>
-  <label><input type="radio" name="plan" value="pro" checked /> Pro</label>
+<form id="signup" action="/signup" method="post">
+  <label>Name <input type="text" name="username" value="Ada" /></label>
+  <label>Age <input type="number" name="age" min="0" max="120" step="1" /></label>
+  <label>Volume <input type="range" name="volume" min="0" max="10" value="3" /></label>
+  <label>Birthday <input type="date" name="birthday" /></label>
+  <label>Colour <input type="color" name="colour" value="#ff0000" /></label>
+  <input type="hidden" name="source" value="landing-page" />
 
   <button type="submit">Send</button>
 </form>
