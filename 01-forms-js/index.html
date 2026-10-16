@@ -6,9 +6,14 @@
 </head>
 <body>
   <form id="signup" action="/signup" method="post">
-    <input type="text" name="username" />
-    <button type="submit">Send</button>
-  </form>
+  <input type="text" name="username" id="username" />
+  <input type="email" name="email" id="email" />
+
+  <label><input type="radio" name="plan" value="free" /> Free</label>
+  <label><input type="radio" name="plan" value="pro" checked /> Pro</label>
+
+  <button type="submit">Send</button>
+</form>
   <script src="script.js"></script>
 </body>
 </html>
